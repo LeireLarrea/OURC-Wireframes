@@ -1,0 +1,97 @@
+<!--
+ Main XHTML Strict Template for the Open University TT284 Web technologies EMA
+ Created by Leire Larrea Casado (E1662175)
+ Version 1.1 (January 2017)
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>OURCAP Memebers</title>
+	
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="content-Style-Type" content="text/css" />
+	<meta name="author" content="Leire Larrea" />
+	<meta name="description" content="Create new OURC Members here" />
+	<meta name="keywords" content="OURC, Members, new" />
+	
+	<link rel="stylesheet" type="text/css" href="ou_stylesheet_Wide.css" />
+	<script type="text/javascript" src="ou_scrypt.js"> </script>
+
+</head>
+<body>
+	<div id="page">
+		
+		<div id="header">
+			<a href="admin-home.html" title="Open University Running Club" id="headerLogo">
+				Open University Running Club Logo and Name Here
+			</a>
+		</div>
+		
+		<div id="adNavbar">
+	  		<div class="adMenu"> <a href="admin-home.html">Admin Home</a> </div>
+			<div class="adMenuActive"> <a href="admin-members.html">Members</a> </div>
+			<div class="adMenu"> <a href="admin-events.html">Events</a> </div>
+			<div class="adMenu"> <a href="admin-email.html">Email</a> </div>
+			<div class="adMenu"> <a href="admin-news.html">News</a> </div>
+			
+		</div> 
+		
+		<div id="login">
+			<div class="adminLogin"><a href="logout.html">Log Out</a> </div>
+			<div class="adminLogin"><a href="admin-user.html">Sample User</a> </div>
+		</div>
+		
+		<div id="contents">
+			<h1>Submit New Member Data</h1>
+			<p> Note: all fields marked '*' are mandatory.</p>
+			<p> You can use tab keys to move from one input field to the next.</p>
+			<form  action="new-member.html" >
+				<table>
+						<tr>
+							<td>First Name:*</td>
+							<td><input type="text" name="Date" id="d" size="20" maxlength="20" onchange="return validated();" /></td>
+						</tr>
+						<tr>
+							<td>Last Name:*</td>
+							<td><input type="text" name="RaceID" id="rid" size="20" maxlength="20" onchange="return validaterid();"/></td>
+						</tr>
+						<tr>
+							<td>Email Address:*</td>
+							<td> <input type="text" name="EventID" id="eid" size="20" maxlength="20" onchange="return validateeid();" /></td>
+						</tr>
+						<tr>
+							<td> Consent to receive automated emails </td>
+                            <td><input type="radio" name="IncludeAgeGrade" value="1" />Yes <input type="radio" name="IncludeAgeGrade" value="0" />No </td>
+                         </tr>
+					</table>
+					<p>
+					<input type="button" value="Create Member" onclick="window.location.href='event-confirmation.html'" />
+					<input type="button" value="Cancel" onclick="window.location.href='admin-home.html'" />
+					</p>
+					
+				</form>
+	
+	
+		</div>
+
+		<div class="clear"> </div >
+		
+		<div id="footer">
+			<div class="iFooter"><a href="under-construction.html">Privacy</a></div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">Contact</a> </div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">FAQs</a></div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">Copyright</a></div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">Conditions of Use</a>  </div>
+		</div>
+
+	</div>
+</body>
+</html>

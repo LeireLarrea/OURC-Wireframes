@@ -1,0 +1,186 @@
+/*  Main CSS Wide Template for the Open University TT284 Web technologies EMA
+ Created by Leire Larrea Casado (E1662175)
+ Version 1.0 (June 2017)
+*/
+
+
+/*  ---------       GENEAL, BODY, PAGE, HEADER  ------------ */
+
+body 	{
+	padding: 0;
+	text-align: justify;
+	font-family: "Century Gothic", Verdana, sans-serif;
+	font-size: 13px;
+	color: #666666;
+	}
+	
+#page	{
+	width: 1000px;
+	height: 100%;  
+
+	}
+	
+p 	{
+	text-align: left;
+	}
+
+a	{
+	text-decoration:none;
+	color:#252F33;
+	}
+	
+a:hover {
+    font-weight: bold;
+	}
+	
+.clear	{
+	clear: both;
+}
+
+/*  ---------       LOGIN  ------------ */
+
+#login	{
+	width: 300px;
+	float: right;
+	font-weight:bold;
+	z-index: 10;
+}
+
+.adminLogin	{
+	float: right;
+	padding: 30px;
+}
+	
+/*  ---------       HEADER  ------------ */
+	
+#headerLogo	{
+	background: url(emaWireframeResources/imageWideLargeRectangle.jpg) no-repeat ;
+	display: block;
+	height:300px;
+	width: 1000px;
+	z-index: 1;
+	/* text-indent:-9999px; */
+}
+
+
+	
+/*  ---------       ADMIN MENU  ------------ */
+#adNavbar	{
+	width: 1000px;
+	position: relative;
+	float:left;
+	}
+
+.adMenu	{
+	height: 40px;
+	width: 200px;
+	float: left;
+	text-align:center;
+	font-family: "Century Gothic", Verdana, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding-top:19px;
+	background-color: #4d4d4d;
+	}
+
+.adMenu:hover{
+	background-color:#b8c1b8;
+	}
+	
+.adMenu	a{
+	color: #ffffff;
+	}
+
+.adMenuActive	{
+	height:40px;
+	width: 200px;
+	float: left;
+	text-align:center;
+	font-family: "Century Gothic", Verdana, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	background-color:#b8c1b8;
+	padding-top:19px;
+	}
+	
+.adMenuActive	a{	
+	color:#333333;
+	}
+
+
+
+/*  ---------       CONTENTS WRAPPER     ------------ */
+#contents{
+	display: block;
+	float: left;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	width: 700px;
+	text-align:left;
+	font-family:"Century-Gothic", Verdana, sans-serif;
+	line-height:20px;
+
+	}
+
+
+
+
+
+/*  ---------       FOOTER     ------------ */
+#footer {
+	width: 1000px;
+	height:60px;
+	text-align:center;
+	font-size:10px;
+	color:#000000;
+	padding-top:100px;
+	}
+
+.iFooter	{
+	display: block;
+	float: left;
+	width: 110px;
+	}
+
+	
+/*  ---------       EVENTS    ------------ */
+.column	{
+	width: 350px;
+	float: left;
+}
+
+.calendar	{
+	width: 230px;
+	height: 250px;
+	float: right;
+	text-align:left;
+	}
+	
+.button	{
+	width: 200px;
+	height: 30px;
+	text-align:center;
+	background-color:#b8c1b8;
+	padding-top: 10px;
+	margin: 10px;
+	}
+	
+#centerButtons	{
+	padding-top: 15px;
+	width: 230px;
+}
+
+#centerButtons	p{
+	font-size:20px;
+	font-weight:bold;
+	padding-top: 10px;
+	margin-left: -10px;
+}
+
+#resultsButtons	{
+	padding-top: 15px;
+	width: 230px;
+	float: right;
+}

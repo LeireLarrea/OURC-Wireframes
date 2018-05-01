@@ -1,0 +1,117 @@
+<!--
+ Main XHTML Strict Template for the Open University TT284 Web technologies EMA
+ Created by Leire Larrea Casado (E1662175)
+ Version 1.1 (January 2017)
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>OURCAP Edit Event</title>
+	
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="content-Style-Type" content="text/css" />
+	<meta name="author" content="Leire Larrea" />
+	<meta name="description" content="modify here OURC events / races data" />
+	<meta name="keywords" content="OURC, race, events, modify, edit" />
+	<link rel="stylesheet" type="text/css" href="ou_stylesheet_Wide.css" />
+	<script type="text/javascript" src="ou_scrypt.js"> </script>
+
+</head>
+<body>
+	<div id="page">
+		
+		<div id="header">
+			<a href="admin-home.html" title="Open University Running Club" id="headerLogo">
+				Open University Running Club Logo and Name Here
+			</a>
+		</div>
+		
+		<div id="adNavbar">
+	  		<div class="adMenu"> <a href="admin-home.html">Admin Home</a> </div>
+			<div class="adMenu"> <a href="admin-members.html">Members</a> </div>
+			<div class="adMenuActive"> <a href="admin-events.html">Events</a> </div>
+			<div class="adMenu"> <a href="admin-email.html">Email</a> </div>
+			<div class="adMenu"> <a href="admin-news.html">News</a> </div>
+			
+		</div> 
+		
+		<div id="login">
+			<div class="adminLogin"><a href="logout.html">Log Out</a> </div>
+			<div class="adminLogin"><a href="admin-user.html">Sample User</a> </div>
+		</div>
+		
+		<div id="contents">
+			
+					<h1>Submit a runner time</h1>
+			
+				<p> Note: all fields marked '*' are mandatory.</p>
+				<p> You can use tab keys to move from one input field to the next.</p>
+				<form  action="http://llc222.tt284.open.ac.uk/b2files/submitValues.php" method="post"  onsubmit ="return fullValidation()" >
+				
+					<table>
+						<tr>
+							<td>Runner ID*</td>
+							<td><input type="text" name="RunnerID" id="rid" size="20" maxlength="4" onchange="return validaterid();"/></td>
+						</tr>
+						<tr>
+							<td>Event ID*</td>
+							<td> <input type="text" name="EventID" id="eid" size="20" maxlength="4" onchange="return validateeid();" /></td>
+						</tr>
+						<tr>
+							<td>Date (YYYY-MM-DD)*</td>
+							<td><input type="text" name="Date" id="d" size="20" maxlength="10" onchange="return validated();" /></td>
+						</tr>
+						<tr>
+							<td>Finish time (HH:MM:SS)*</td>
+							<td><input type="text" name="FinishTime" id="ft" size="20" maxlength="10" onchange="return validateft();" /></td>
+						</tr>
+						<tr>
+							<td>Position</td>
+							<td><input type="text" name="Position" id="p" size="20" maxlength="5" onchange="return validatep();" /></td>
+						</tr>
+						<tr>
+							<td>Category ID</td>
+							<td><input type="text" name="CategoryID" id="cid" size="20" maxlength="2" onchange="return validatecid();"/></td>
+						</tr>
+						<tr>
+							<td>Age grade</td>
+							<td><input type="text" name="AgeGrade" id="ag" size="20" maxlength="5" onchange="return validateag();" /></td>
+						</tr>
+						<tr>
+							<td>Personal best</td>
+							<td><input type="text" name="PB" id="pb" size="20" maxlength="1" onchange="return validatepb();" /></td>
+						</tr>
+					</table>
+					<p>
+					<input type="submit" name="submitrunnertime" value="submit"  />
+					<input type="button" value="Cancel" onclick="window.location.href='view-event.html'" />
+					</p>
+				
+			</form>
+			
+			
+	
+	
+		</div>
+
+		<div class="clear"> </div >
+		
+	<div id="footer">
+			<div class="iFooter"><a href="under-construction.html">Privacy</a></div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">Contact</a> </div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">FAQs</a></div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">Copyright</a></div>
+			<div class="iFooter">| </div>
+			<div class="iFooter"><a href="under-construction.html">Conditions of Use</a>  </div>
+		</div>
+
+	</div>
+</body>
+</html>
